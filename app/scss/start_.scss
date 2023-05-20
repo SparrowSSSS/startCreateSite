@@ -1,0 +1,62 @@
+/*----------Импорт шрифтов(scss файл)----------*/
+
+/*----------/Импорт шрифтов(scss файл)----------*/
+
+/*----------Различные переменные----------*/
+$container-width: 1200px;
+/*----------/Различные переменные----------*/
+
+/*----------z-index----------*/
+$z-i1: 1000;
+$z-i2: 3000;
+$z-i3: 5000;
+$z-i4: 10000;
+/*----------/z-index----------*/
+
+/*----------Основные параметры----------*/
+$main_color: "";
+$main_font: "";
+$main_size: "";
+$main_line-height: "";
+$main_letter-spacing: "";
+/*----------/Основные параметры----------*/
+
+/*----------Цвета----------*/
+
+/*----------/Цвета----------*/
+
+/*----------Настройка----------*/
+*, *::before, *::after {padding: 0; margin: 0; border: 0; box-sizing: border-box;}
+a {text-decoration: none;}
+ul, ol, li {list-style: none;}
+img {vertical-align: top; user-select: none; max-width: 100%; max-height: 100%;}
+video {width: 100%; height: 100%;}
+h1, h2, h3, h4, h5, h6 {font-weight: inherit; font-size: inherit;}
+html, body {height: 100%; line-height: $main_line-height; font-size: $main_size; color: $main_color; scroll-behavior: smooth; font-family: $main_font; letter-spacing: $main_letter-spacing;}
+:active, :hover, :focus {outline: 0; outline-offset: 0;}
+.wrapper {max-width: 100%; min-width: 100%; overflow: hidden; position: absolute; top: 0; left: 0; display: flex; flex-direction: column;}
+._container {max-width: $container-width; box-sizing: content-box; padding: 0 10px; margin: 0 auto;}
+/*----------/Настройка----------*/
+
+/*----------Миксины----------*/
+//Стиль текста
+@mixin text($c, $ff, $fsi, $lh, $ls) {
+    color: $c;
+    font-family: $ff;
+    font-size: $fsi;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+//Стиль блока
+@mixin block($bc, $b, $pad, $mw) {
+    background-color: $bc;
+    border: $b;
+    padding: $pad;
+    max-width: $mw;
+}
+/*----------/Миксины----------*/
+
+/*----------Различные импорты(scss файлы)----------*/
+
+/*----------/Различные импорты(scss файлы)----------*/

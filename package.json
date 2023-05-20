@@ -1,0 +1,40 @@
+{
+  "name": "gulp_build",
+  "version": "1.0.0",
+  "description": "My gulp build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prod": "gulp prod && webpack --config webpack.prod.js",
+    "webpack-dev": "webpack --config webpack.dev.js",
+    "gulp-watchBrow": "gulp watch_brow",
+    "build:dev": "npm-run-all --parallel gulp-watchBrow webpack-dev"
+  },
+  "author": "sparrow",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "browser-sync": "^2.29.1",
+    "css-loader": "^6.7.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter-2": "^0.3.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.62.0",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "style-loader": "^3.3.2"
+  }
+}
